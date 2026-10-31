@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>نموذج التقديم</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main class="container narrow">
+    <h1>نموذج التقديم</h1>
+    <p id="job-title"></p>
+    <p id="page-message" class="alert" hidden></p>
+    <form id="application-form" enctype="multipart/form-data">
+        <input id="job_id" name="job_id" type="hidden">
+        <label for="applicant_name">الاسم الكامل</label>
+        <input id="applicant_name" name="applicant_name" type="text" minlength="2" maxlength="120" required>
+        <label for="email">البريد الإلكتروني</label>
+        <input id="email" name="email" type="email" maxlength="190" required>
+        <label for="phone">رقم الهاتف</label>
+        <input id="phone" name="phone" type="tel" maxlength="30">
+        <label for="cover_message">رسالة مختصرة</label>
+        <textarea id="cover_message" name="cover_message" rows="6"></textarea>
+        <label for="cv">السيرة الذاتية PDF/DOC/DOCX، حد أقصى 5 MB</label>
+        <input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx" required>
+        <button class="button" type="submit">إرسال الطلب</button>
+    </form>
+</main>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>
